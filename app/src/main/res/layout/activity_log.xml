@@ -4,25 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.stang.logproject.AddActivity"
-    android:weightSum="1"
-    android:orientation="vertical">
+    tools:context="com.example.stang.logproject.LogActivity"
+    android:orientation="vertical"
+    android:baselineAligned="false">
 
-    <EditText
-        android:id="@+id/editText"
+    <ListView
+        android:id="@+id/log_list"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.98"
-        android:hint="Type here..."
-        android:gravity="top"
-        android:ems="10"
-        android:inputType="textMultiLine" />
+        android:layout_height="417dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Save"
-        tools:layout_editor_absoluteX="94dp"
-        tools:layout_editor_absoluteY="16dp" />
+        android:text="New" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete" />
+
 </LinearLayout>
